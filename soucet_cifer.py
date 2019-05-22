@@ -27,8 +27,11 @@ try:
             total = total + b
             number = number // 10
 
-        # Addition of the "-" mark.
-        print("-", total)
+        if (total > 0):
+            print(total)
+        else:
+            # Addition of the "-" mark.
+            print("-", total)
 
 # The except block checks if number is string or anything else. If yes, it will print error message.
 except ValueError:
